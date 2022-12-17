@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Edit</title>
+    </head>
+</html>
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{f.as_p}}
+    <button type="submit">confirm</button>
+</form>
+
+{% endblock %}
